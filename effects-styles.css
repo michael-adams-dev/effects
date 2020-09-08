@@ -1,0 +1,65 @@
+body {
+    background: #f7ede2;
+}
+
+.puppy-img {
+    width: 200px;
+    height: 200px;
+}
+
+.puppy-img:hover {
+    transform: scale(1.5) rotate(45deg);
+    transition: 2s;
+    filter: grayscale(100%);
+}
+
+.puppy-link {
+    color: green;
+}
+
+.puppy-link:visited {
+    color: pink;
+}
+
+.puppy-link:hover {
+    text-decoration: none;
+}
+
+.puppy-img-anim {
+    width: 200px;
+    height: 200px;
+    animation-name: puppy-animation;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+
+@keyframes puppy-animation {
+    0% {
+        width: 100px;
+        height: 100px;
+        filter: grayscale(0);
+    }
+    25% {
+        filter: grayscale(25%);
+        transform: skew(25deg);
+    }
+    50% {
+        width: 300px;
+        height: 300px;
+        filter: grayscale(50%);
+        transform: skew(50deg);
+    }
+    75% {
+        filter: grayscale(75%);
+        transform: skew(25deg);
+    }
+    100% {
+        width: 200px;
+        height: 200px;
+        filter: grayscale(100%);
+        transform: skew(0);
+    }
+}
+
+
+
